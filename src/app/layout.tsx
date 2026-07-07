@@ -23,8 +23,11 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/icon.jpg",
-    apple: "/icon.jpg",
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
+  verification: {
+    google: "iYhD3GQqnatWWaAejnJSUeiLbpnq0YaYmKEM0v3DbxI",
   },
   openGraph: {
     title: "v2rayN Client - High-Security Proxy GUI",
