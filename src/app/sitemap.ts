@@ -4,7 +4,7 @@ import { articlesData } from "../data/articles";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://v2rayn.org";
+  const baseUrl = "https://v2rayn-download.vercel.app";
 
   // Standard static pages
   const staticPages = [

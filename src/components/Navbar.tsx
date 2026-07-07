@@ -66,7 +66,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
           </div>
 
           {/* Desktop Navigation Menu */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden xl:flex items-center space-x-0.5 2xl:space-x-1">
             {navItems.map((item) => {
               const isActive = activePage === item.page || activePage.startsWith(item.page + "/");
               return (
@@ -74,7 +74,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
                   key={item.page}
                   id={`btn-nav-${item.page}`}
                   onClick={() => onNavigate(item.page)}
-                  className={`px-3 py-1.5 text-xs xl:text-sm font-semibold rounded-lg transition-colors cursor-pointer ${
+                  className={`px-2 py-1.5 text-xs 2xl:px-3 2xl:text-sm font-semibold rounded-lg transition-colors cursor-pointer ${
                     isActive
                       ? "bg-neutral-100 dark:bg-neutral-800/80 text-blue-600 dark:text-blue-400"
                       : "text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 hover:text-neutral-900 dark:hover:text-neutral-100"
@@ -135,7 +135,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
             <button
               id="btn-mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 transition-colors cursor-pointer"
+              className="xl:hidden p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 transition-colors cursor-pointer"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -154,7 +154,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
 
       {/* Mobile Menu Panel */}
       {isMobileMenuOpen && (
-        <div id="mobile-nav-panel" className="lg:hidden bg-white dark:bg-neutral-950 border-t border-neutral-100 dark:border-neutral-900 transition-colors duration-200">
+        <div id="mobile-nav-panel" className="xl:hidden bg-white dark:bg-neutral-950 border-t border-neutral-100 dark:border-neutral-900 transition-colors duration-200">
           <div className="px-2 pt-2 pb-4 space-y-1">
             {navItems.map((item) => {
               const isActive = activePage === item.page || activePage.startsWith(item.page + "/");

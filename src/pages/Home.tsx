@@ -63,10 +63,7 @@ export default function Home({ onNavigate }: HomeProps) {
       
       {/* 1. HERO SECTION */}
       <section id="hero-section" className="text-center max-w-4xl mx-auto space-y-6 pt-4">
-        <span className="text-xs font-extrabold text-blue-600 dark:text-blue-400 uppercase tracking-widest bg-blue-50 dark:bg-blue-950/40 px-3.5 py-1.5 rounded-full w-fit mx-auto border border-blue-100 dark:border-blue-900/40">
-          Unofficial Educational Resource
-        </span>
-        
+      
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-neutral-950 dark:text-white font-sans leading-[1.1]">
           Download v2rayN for Windows <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-300 bg-clip-text text-transparent">(Latest Version)</span>
         </h1>

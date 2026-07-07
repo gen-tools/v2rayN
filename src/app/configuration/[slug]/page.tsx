@@ -32,12 +32,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${article.title} - v2rayN Configuration Guide`,
     description: article.description,
     alternates: {
-      canonical: `https://v2rayn.org/configuration/${slug}`,
+      canonical: `https://v2rayn-download.vercel.app/configuration/${slug}`,
     },
     openGraph: {
       title: `${article.title} - v2rayN Configuration Guide`,
       description: article.description,
-      url: `https://v2rayn.org/configuration/${slug}`,
+      url: `https://v2rayn-download.vercel.app/configuration/${slug}`,
     },
   };
 }

@@ -18,14 +18,18 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "v2rayN Client - High-Security Proxy GUI for Windows, Linux & macOS",
   description: "Download v2rayN securely. The leading open-source Windows/macOS/Linux client for Xray Core, V2ray Core, VLESS, VMess, Trojan, and Shadowsocks protocols.",
-  metadataBase: new URL("https://v2rayn.org"),
+  metadataBase: new URL("https://v2rayn-download.vercel.app"),
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: "/icon.jpg",
+    apple: "/icon.jpg",
   },
   openGraph: {
     title: "v2rayN Client - High-Security Proxy GUI",
     description: "Download the latest v2rayN stable release. Secure subscription updates, TUN mode global routing, and anti-hijacking custom DNS configurations.",
-    url: "https://v2rayn.org",
+    url: "https://v2rayn-download.vercel.app",
     siteName: "v2rayN Portal",
     type: "website",
   },

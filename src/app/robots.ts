@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://v2rayn.org/sitemap.xml",
+    sitemap: "https://v2rayn-download.vercel.app/sitemap.xml",
   };
 }
