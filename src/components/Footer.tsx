@@ -211,7 +211,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         {/* Lower footer copyright details */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-neutral-200 dark:border-neutral-900 text-xs font-medium text-neutral-500 dark:text-neutral-400">
           <p className="flex items-center gap-1">
-            &copy; {new Date().getFullYear()} v2rayN.org. All rights reserved. Created with <Heart className="w-3.5 h-3.5 text-rose-500 fill-current inline" /> for safety.
+            &copy; {new Date().getFullYear()} v2rayN.org. All rights reserved. Developed by Sheztech.
           </p>
           <div className="flex gap-4 sm:gap-6 font-semibold">
             <button id="btn-foot-terms" onClick={() => onNavigate("about")} className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors cursor-pointer">
