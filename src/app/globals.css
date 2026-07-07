@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  /* Scroll-margin offsets for smooth links navigation */
+  .scroll-mt-24 {
+    scroll-margin-top: 6rem;
+  }
+}
