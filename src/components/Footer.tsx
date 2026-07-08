@@ -204,7 +204,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div className="space-y-1">
             <span className="font-bold text-neutral-800 dark:text-neutral-200 block">Independent Disclaimer Statement</span>
             <p>
-              v2rayN.org is an independent educational portal and resource index. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the official development team of v2rayN or 2dust. All downloadable files linked across this directory route directly to public releases hosted on the official GitHub server repository (github.com/2dust/v2rayN). We do not host, store, alter, or monetize any binary releases.
+              v2rayN is an independent educational portal and resource index. We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the official development team of v2rayN or 2dust. All downloadable files linked across this directory route directly to public releases hosted on the official GitHub server repository (github.com/2dust/v2rayN). We do not host, store, alter, or monetize any binary releases.
             </p>
           </div>
         </div>
@@ -212,7 +212,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         {/* Lower footer copyright details */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-neutral-200 dark:border-neutral-900 text-xs font-medium text-neutral-500 dark:text-neutral-400">
           <p className="flex items-center gap-1">
-            &copy; {new Date().getFullYear()} v2rayN.org. All rights reserved. Developed by Sheztech.
+            &copy; {new Date().getFullYear()} v2rayN. All rights reserved. Developed by Sheztech.
           </p>
           <div className="flex gap-4 sm:gap-6 font-semibold">
             <button id="btn-foot-terms" onClick={() => onNavigate("about")} className="hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors cursor-pointer">
