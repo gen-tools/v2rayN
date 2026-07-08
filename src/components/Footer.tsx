@@ -88,6 +88,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 referrerPolicy="no-referrer"
                 className="p-1.5 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900 text-neutral-600 dark:text-neutral-400 transition-colors"
                 title="Official GitHub Releases"
+                aria-label="Official GitHub Releases"
               >
                 <Github className="w-4 h-4" />
               </a>

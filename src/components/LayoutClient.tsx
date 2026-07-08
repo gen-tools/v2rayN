@@ -27,24 +27,30 @@ export default function LayoutClient({ children }: LayoutClientProps) {
   useEffect(() => {
     const savedTheme = localStorage.getItem("v2rayn-theme") as "light" | "dark" | null;
     const initialTheme = savedTheme || "light";
+    console.log("LayoutClient initial theme loaded:", initialTheme);
     setTheme(initialTheme);
     
     if (initialTheme === "dark") {
       document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
     }
   }, []);
 
   const handleToggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
+    console.log("handleToggleTheme clicked, next theme:", nextTheme);
     setTheme(nextTheme);
     localStorage.setItem("v2rayn-theme", nextTheme);
     
     if (nextTheme === "dark") {
       document.documentElement.classList.add("dark");
+      document.body.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
+      document.body.classList.remove("dark");
     }
   };
 

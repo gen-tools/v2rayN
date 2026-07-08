@@ -89,6 +89,7 @@ export default function SearchBox({ onNavigate, onClose, embedded = false }: Sea
             id="btn-search-clear"
             onClick={() => setQuery("")}
             className="p-1 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-400 hover:text-neutral-600 transition-colors cursor-pointer"
+            aria-label="Clear search query"
           >
             <X className="w-4 h-4" />
           </button>

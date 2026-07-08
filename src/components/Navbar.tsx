@@ -15,6 +15,11 @@ interface NavbarProps {
 export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Close menus on page change
   useEffect(() => {
@@ -94,6 +99,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
               onClick={() => setIsSearchOpen(!isSearchOpen)}
               className="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 transition-colors cursor-pointer"
               title="Search guides..."
+              aria-label="Search guides"
             >
               <Search className="w-4 h-4 md:w-5 h-5" />
             </button>
@@ -103,9 +109,10 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
               id="btn-toggle-theme"
               onClick={onToggleTheme}
               className="p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 transition-colors cursor-pointer"
-              title={theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
+              title={!mounted || theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
+              aria-label={!mounted || theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
             >
-              {theme === "light" ? <Moon className="w-4 h-4 md:w-5 h-5" /> : <Sun className="w-4 h-4 md:w-5 h-5" />}
+              {!mounted || theme === "light" ? <Moon className="w-4 h-4 md:w-5 h-5" /> : <Sun className="w-4 h-4 md:w-5 h-5" />}
             </button>
 
             {/* GitHub Star Proxy / Link */}
@@ -136,6 +143,7 @@ export default function Navbar({ activePage, onNavigate, theme, onToggleTheme }:
               id="btn-mobile-menu-toggle"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="xl:hidden p-2 rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-600 dark:text-neutral-300 transition-colors cursor-pointer"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>

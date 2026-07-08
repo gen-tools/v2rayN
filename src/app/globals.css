@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
+@variant dark (.dark &);
+
 @theme {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --color-neutral-400: var(--neutral-400-custom);
+  --color-neutral-500: var(--neutral-500-custom);
+}
+
+:root {
+  --neutral-400-custom: #525252;
+  --neutral-500-custom: #404040;
+}
+
+.dark {
+  --neutral-400-custom: #a3a3a3;
+  --neutral-500-custom: #d4d4d4;
 }
 
 @layer utilities {
