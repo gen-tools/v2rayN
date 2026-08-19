@@ -1,0 +1,6 @@
+{
+  "name": "v2rayN Download & Setup Guide",
+  "description": "An independent, high-performance educational resource and download guide for v2rayN, the popular open-source Windows GUI client for v2ray, Xray, and other protocols.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
