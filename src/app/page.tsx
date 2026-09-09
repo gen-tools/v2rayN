@@ -4,8 +4,8 @@ import Home from "@/src/pages/Home";
 import { downloadConfig } from "@/src/config/download";
 
 export const metadata: Metadata = {
-  title: "Download v2rayN for Windows (Latest Release) | Independent Setup Guide",
-  description: "Download the latest verified v2rayN release for Windows 10 & 11 from the official GitHub repository. Complete setup guide, system requirements, troubleshooting, and protocol documentation.",
+  title: "Download v2rayN for Windows | Latest Version",
+  description: "Download v2rayN for Windows 10/11 and get the latest version, official release links, installation instructions, configuration guide, and troubleshooting tips.",
   alternates: {
     canonical: "https://v2rayn-download.vercel.app/",
   },
